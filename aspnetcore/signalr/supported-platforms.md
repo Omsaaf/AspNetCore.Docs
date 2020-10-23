@@ -6,7 +6,7 @@ monikerRange: '>= aspnetcore-2.1'
 ms.author: bradyg
 ms.custom: mvc
 ms.date: 01/16/2020
-no-loc: [SignalR]
+no-loc: ["ASP.NET Core Identity", cookie, Cookie, Blazor, "Blazor Server", "Blazor WebAssembly", "Identity", "Let's Encrypt", Razor, SignalR]
 uid: signalr/supported-platforms
 ---
 # ASP.NET Core SignalR supported platforms
@@ -19,13 +19,12 @@ SignalR for ASP.NET Core supports any server platform that ASP.NET Core supports
 
 The [JavaScript client](xref:signalr/javascript-client) runs on NodeJS 8 and later versions and the following browsers:
 
-| Browser                         | Version         |
-| ------------------------------- | --------------- |
-| Microsoft Edge                  | Current&dagger; |
-| Mozilla Firefox                 | Current&dagger; |
-| Google Chrome; includes Android | Current&dagger; |
-| Safari; includes iOS            | Current&dagger; |
-| Microsoft Internet Explorer     | 11              |
+| Browser                          | Version         |
+| -------------------------------- | --------------- |
+| Apple Safari, including iOS      | Current&dagger; |
+| Google Chrome, including Android | Current&dagger; |
+| Microsoft Edge                   | Current&dagger; |
+| Mozilla Firefox                  | Current&dagger; |
 
 &dagger;*Current* refers to the latest version of the browser.
 

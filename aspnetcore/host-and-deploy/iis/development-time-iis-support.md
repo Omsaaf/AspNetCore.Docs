@@ -1,16 +1,17 @@
 ---
 title: Development-time IIS support in Visual Studio for ASP.NET Core
-author: guardrex
+author: rick-anderson
 description: Discover support for debugging ASP.NET Core apps when running with IIS on Windows Server.
 monikerRange: '>= aspnetcore-2.1'
 ms.author: riande
 ms.custom: mvc
 ms.date: 02/07/2020
+no-loc: ["ASP.NET Core Identity", cookie, Cookie, Blazor, "Blazor Server", "Blazor WebAssembly", "Identity", "Let's Encrypt", Razor, SignalR]
 uid: host-and-deploy/iis/development-time-iis-support
 ---
 # Development-time IIS support in Visual Studio for ASP.NET Core
 
-By [Sourabh Shirhatti](https://twitter.com/sshirhatti) and [Luke Latham](https://github.com/guardrex)
+By [Sourabh Shirhatti](https://twitter.com/sshirhatti)
 
 ::: moniker range=">= aspnetcore-3.0"
 
@@ -34,7 +35,7 @@ The IIS installation may require a system restart.
 
 IIS must have a website configured with the following:
 
-* **Host name** &ndash; Typically, the **Default Web Site** is used with a **Host name** of `localhost`. However, any valid IIS website with a unique host name works.
+* **Host name**: Typically, the **Default Web Site** is used with a **Host name** of `localhost`. However, any valid IIS website with a unique host name works.
 * **Site Binding**
   * For apps that require HTTPS, create a binding to port 443 with a certificate. Typically, the **IIS Express Development Certificate** is used, but any valid certificate works.
   * For apps that use HTTP, confirm the existence of a binding to post 80 or create a binding to port 80 for a new site.
@@ -149,7 +150,7 @@ The IIS installation may require a system restart.
 
 IIS must have a website configured with the following:
 
-* **Host name** &ndash; Typically, the **Default Web Site** is used with a **Host name** of `localhost`. However, any valid IIS website with a unique host name works.
+* **Host name**: Typically, the **Default Web Site** is used with a **Host name** of `localhost`. However, any valid IIS website with a unique host name works.
 * **Site Binding**
   * For apps that require HTTPS, create a binding to port 443 with a certificate. Typically, the **IIS Express Development Certificate** is used, but any valid certificate works.
   * For apps that use HTTP, confirm the existence of a binding to post 80 or create a binding to port 80 for a new site.

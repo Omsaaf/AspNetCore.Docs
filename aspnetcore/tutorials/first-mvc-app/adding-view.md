@@ -1,13 +1,14 @@
 ---
-title: Add a view to an ASP.NET Core MVC app
+title: Part 3, add a view to an ASP.NET Core MVC app
 author: rick-anderson
-description: Adding a view to a simple ASP.NET Core MVC app
+description: Part 3 of tutorial series on ASP.NET Core MVC.
 ms.author: riande
 ms.date: 8/04/2019
+no-loc: ["ASP.NET Core Identity", cookie, Cookie, Blazor, "Blazor Server", "Blazor WebAssembly", "Identity", "Let's Encrypt", Razor, SignalR]
 uid: tutorials/first-mvc-app/adding-view
 ---
 
-# Add a view to an ASP.NET Core MVC app
+# Part 3, add a view to an ASP.NET Core MVC app
 
 By [Rick Anderson](https://twitter.com/RickAndMSFT)
 
@@ -67,9 +68,9 @@ Add an `Index` view for the `HelloWorldController`.
 
 Replace the contents of the *Views/HelloWorld/Index.cshtml* Razor view file with the following:
 
-[!code-HTML[](~/tutorials/first-mvc-app/start-mvc/sample/MvcMovie22/Views/HelloWorld/Index1.cshtml?highlight=7)]
+[!code-cshtml[](~/tutorials/first-mvc-app/start-mvc/sample/MvcMovie22/Views/HelloWorld/Index1.cshtml?highlight=7)]
 
-Navigate to `https://localhost:{PORT}/HelloWorld`. The `Index` method in the `HelloWorldController` didn't do much; it ran the statement `return View();`, which specified that the method should use a view template file to render a response to the browser. Because a view template file name wasn't specified, MVC defaulted to using the default view file. The default view file has the same name as the method (`Index`), so in the */Views/HelloWorld/Index.cshtml* is used. The image below shows the string "Hello from our View Template!" hard-coded in the view.
+Navigate to `https://localhost:{PORT}/HelloWorld`. The `Index` method in the `HelloWorldController` didn't do much; it ran the statement `return View();`, which specified that the method should use a view template file to render a response to the browser. Because a view template file name wasn't specified, MVC defaulted to using the default view file. The default view file has the same name as the method (`Index`), so the view template in */Views/HelloWorld/Index.cshtml* is used. The image below shows the string "Hello from our View Template!" hard-coded in the view.
 
 ![Browser window](~/tutorials/first-mvc-app/adding-view/_static/hell_template.png)
 
@@ -83,7 +84,7 @@ Select the menu links (**MvcMovie**, **Home**, and **Privacy**). Each page shows
 
 Replace the content of the *Views/Shared/_Layout.cshtml* file with the following markup. The changes are highlighted:
 
-[!code-html[](~/tutorials/first-mvc-app/start-mvc/sample/MvcMovie3/Views/Shared/_Layout.cshtml?highlight=6,14,40)]
+[!code-cshtml[](~/tutorials/first-mvc-app/start-mvc/sample/MvcMovie3/Views/Shared/_Layout.cshtml?highlight=6,14,40)]
 
 The preceding markup made the following changes:
 
@@ -112,7 +113,7 @@ The *Views/_ViewStart.cshtml* file brings in the *Views/Shared/_Layout.cshtml* f
 
 Change the title and `<h2>` element of the *Views/HelloWorld/Index.cshtml* view file:
 
-[!code-HTML[](~/tutorials/first-mvc-app/start-mvc/sample/MvcMovie/Views/HelloWorld/Index2.cshtml?highlight=2,5)]
+[!code-cshtml[](~/tutorials/first-mvc-app/start-mvc/sample/MvcMovie/Views/HelloWorld/Index2.cshtml?highlight=2,5)]
 
 The title and `<h2>` element are slightly different so you can see which bit of code changes the display.
 
@@ -148,7 +149,7 @@ Create a Welcome view template named *Views/HelloWorld/Welcome.cshtml*.
 
 You'll create a loop in the *Welcome.cshtml* view template that displays "Hello" `NumTimes`. Replace the contents of *Views/HelloWorld/Welcome.cshtml* with the following:
 
-[!code-html[](~/tutorials/first-mvc-app/start-mvc/sample/MvcMovie/Views/HelloWorld/Welcome.cshtml)]
+[!code-cshtml[](~/tutorials/first-mvc-app/start-mvc/sample/MvcMovie/Views/HelloWorld/Welcome.cshtml)]
 
 Save your changes and browse to the following URL:
 
@@ -224,7 +225,7 @@ Add an `Index` view for the `HelloWorldController`.
 
 Replace the contents of the *Views/HelloWorld/Index.cshtml* Razor view file with the following:
 
-[!code-HTML[](~/tutorials/first-mvc-app/start-mvc/sample/MvcMovie22/Views/HelloWorld/Index1.cshtml?highlight=7)]
+[!code-cshtml[](~/tutorials/first-mvc-app/start-mvc/sample/MvcMovie22/Views/HelloWorld/Index1.cshtml?highlight=7)]
 
 Navigate to `https://localhost:{PORT}/HelloWorld`. The `Index` method in the `HelloWorldController` didn't do much; it ran the statement `return View();`, which specified that the method should use a view template file to render a response to the browser. Because a view template file name wasn't specified, MVC defaulted to using the default view file. The default view file has the same name as the method (`Index`), so in the */Views/HelloWorld/Index.cshtml* is used. The image below shows the string "Hello from our View Template!" hard-coded in the view.
 
@@ -243,7 +244,7 @@ Select the menu links (**MvcMovie**, **Home**, and **Privacy**). Each page shows
 
 The following markup shows the highlighted changes:
 
-[!code-html[](~/tutorials/first-mvc-app/start-mvc/sample/MvcMovie22/Views/Shared/_Layout.cshtml?highlight=6,24,51)]
+[!code-cshtml[](~/tutorials/first-mvc-app/start-mvc/sample/MvcMovie22/Views/Shared/_Layout.cshtml?highlight=6,24,51)]
 
 In the preceding markup, the `asp-area` [anchor Tag Helper attribute](xref:mvc/views/tag-helpers/builtin-th/anchor-tag-helper) was omitted because this app is not using [Areas](xref:mvc/controllers/areas).
 
@@ -272,7 +273,7 @@ The *Views/_ViewStart.cshtml* file brings in the *Views/Shared/_Layout.cshtml* f
 
 Change the title and `<h2>` element of the *Views/HelloWorld/Index.cshtml* view file:
 
-[!code-HTML[](~/tutorials/first-mvc-app/start-mvc/sample/MvcMovie/Views/HelloWorld/Index2.cshtml?highlight=2,5)]
+[!code-cshtml[](~/tutorials/first-mvc-app/start-mvc/sample/MvcMovie/Views/HelloWorld/Index2.cshtml?highlight=2,5)]
 
 The title and `<h2>` element are slightly different so you can see which bit of code changes the display.
 
@@ -308,7 +309,7 @@ Create a Welcome view template named *Views/HelloWorld/Welcome.cshtml*.
 
 You'll create a loop in the *Welcome.cshtml* view template that displays "Hello" `NumTimes`. Replace the contents of *Views/HelloWorld/Welcome.cshtml* with the following:
 
-[!code-html[](~/tutorials/first-mvc-app/start-mvc/sample/MvcMovie/Views/HelloWorld/Welcome.cshtml)]
+[!code-cshtml[](~/tutorials/first-mvc-app/start-mvc/sample/MvcMovie/Views/HelloWorld/Welcome.cshtml)]
 
 Save your changes and browse to the following URL:
 
